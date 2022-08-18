@@ -1,0 +1,135 @@
+@media (max-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .section-price {
+    background-color: hsl(30, 38%, 92%);
+    padding: 4.8rem 9.6rem;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 50rem;
+
+    background: #fff;
+    margin: 6.4rem auto;
+    border-radius: 9px;
+    overflow: hidden;
+  }
+
+  .card {
+    justify-self: center;
+    align-self: center;
+    padding: 2.4rem;
+    height: 100%;
+  }
+  .grid {
+    display: grid;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading {
+    margin-top: 1.8rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: Fraunces;
+    color: hsl(212, 21%, 14%);
+    line-height: 1;
+  }
+  .subheading {
+    font-size: 1.1rem;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+
+  .description {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+  }
+
+  .price-section {
+    margin-top: 1.2rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .price {
+    font-size: 3.2rem;
+    font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+  }
+  .sub-price {
+    text-decoration: line-through;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    width: 100%;
+    height: 4.8rem;
+    border-radius: 9px;
+    border: none;
+    background-color: #3c8067;
+    color: #fff;
+    font-family: inherit;
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #306652;
+  }
+  .btn-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-price {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .container {
+    margin: 2.4rem auto;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box {
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+}
